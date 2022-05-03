@@ -1,10 +1,14 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Добавить пользователя') }}
-        </h2>
+        <div class="flex justify-between">
+            <h2>
+                {{ __('Изменить пользователя') }}
+            </h2>
+            <x-button class="text-white"><a href="{{route('users.index')}}" class="font-semibold text-xl  leading-tight">
+                    {{ __('Назад') }}
+                </a></x-button>
+        </div>
     </x-slot>
-
     <div
         class="rounded-2xl hover:shadow-2xl flex w-full px-6 bg-white md:max-w-md lg:max-w-full md:mx-auto md:w-1/2 xl:w-1/3 lg:px-16 xl:px-12 items-left justify-left my-2">
         <div class="w-full py-16 lg:py-6 mb-3">

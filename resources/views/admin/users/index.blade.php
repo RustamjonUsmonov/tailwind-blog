@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <div class="flex justify-between">
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            <h2>
                 {{ __('Пользователи') }}
             </h2>
             @can('role-create')
@@ -69,7 +69,7 @@
                                                         @method('DELETE')
                                                         @csrf
                                                         <x-button
-                                                            class="flex uppercase px-2 py-1 font-semibold leading-tight text-red-700 bg-red-100 rounded-sm m-1 hover:bg-red-500">
+                                                            class="flex uppercase px-2 py-1 font-semibold leading-tight text-red-700 bg-red-100 rounded-sm m-1 hover:bg-red-500 hover:text-white">
                                                             {{ __('Удалить') }}
                                                         </x-button>
                                                     </form></div>
