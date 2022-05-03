@@ -38,6 +38,13 @@
             {{ __('Users') }}
         </x-nav-link>
 
+        <x-nav-link href="{{ route('roles.index') }}" :active="request()->routeIs('roles.index')">
+            <x-slot name="icon">
+                <i class="w-5 h-5 far fa-clipboard"></i>
+            </x-slot>
+            {{ __('Roles') }}
+        </x-nav-link>
+
         <x-nav-link href="{{ route('about') }}" :active="request()->routeIs('about')">
             <x-slot name="icon">
                 <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
