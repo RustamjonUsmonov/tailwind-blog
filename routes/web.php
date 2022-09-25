@@ -15,7 +15,7 @@ use App\Http\Controllers\Admin\{UserController,RoleController};
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
